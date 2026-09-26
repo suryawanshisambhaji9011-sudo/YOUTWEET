@@ -15,6 +15,9 @@ class VideoAdapter(
     class VideoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val title: TextView = itemView.findViewById(R.id.videoTitle)
         val description: TextView = itemView.findViewById(R.id.videoDescription)
+        val creatorName: TextView? = itemView.findViewById(R.id.creatorName)
+        val likesText: TextView? = itemView.findViewById(R.id.likesText)
+        val viewsText: TextView? = itemView.findViewById(R.id.viewsText)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VideoViewHolder {
@@ -27,6 +30,9 @@ class VideoAdapter(
         val video = videos[position]
         holder.title.text = video.title
         holder.description.text = video.description
+        holder.creatorName?.text = "by ${video.creatorName}"
+        holder.likesText?.text = "❤️ ${video.likes}"
+        holder.viewsText?.text = "👁️ ${video.views}"
     }
 
     override fun getItemCount(): Int = videos.size
