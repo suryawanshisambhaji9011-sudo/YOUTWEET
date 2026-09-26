@@ -1,0 +1,3 @@
+-keep class com.google.firebase.** { *; }
+-keep class androidx.media3.** { *; }
+-keepattributes *Annotation*
