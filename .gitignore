@@ -1,0 +1,40 @@
+# Android
+.gradle/
+.idea/
+*.iml
+*.apk
+*.aar
+*.ap_
+*.aab
+build/
+captures/
+.externalNativeBuild
+.cxx
+local.properties
+*.log
+
+# Gradle
+gradle/
+gradlew
+gradlew.bat
+
+# IDEA / Android Studio
+*.iml
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Firebase / secrets
+google-services.json
+google-services.*.json
+*.jks
+*.keystore
+
+# Misc
+*.class
+*.dex
